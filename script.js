@@ -40,3 +40,19 @@ console.log(findCircumference(5));
 // Example Output:
 // console.log(searchString(“s”, “mississippi”)); // will output 4
 // console.log(searchString(“q”, “mississippi”)); // will output 0
+
+const searchString = (char, word) => {
+    let counter = 0;
+
+    for (let i = 0; i < word.length; i++) {
+        if (word[i].toLowerCase() == char) {
+            counter++;
+        }
+    }
+    return counter;
+};
+
+
+console.log(searchString("s","miSSissippi"));
+
+//this should be correct
